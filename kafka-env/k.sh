@@ -1,7 +1,12 @@
 #!/bin/bash
 
 dir=$(dirname "$0")
+
+# kafka 程序目录
 kafkaDir="$dir"/kafka_2.13-3.0.0
+
+# 为 kafka 命令脚本文件添加可执行权限
+chmod +x "$kafkaDir"/bin/*
 
 case $1 in
 "start"){
