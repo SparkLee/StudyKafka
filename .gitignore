@@ -1,1 +1,4 @@
 .idea
+
+# kafka 日志文件
+kafka-env/kafka_2.13-3.0.0/logs

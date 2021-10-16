@@ -90,9 +90,14 @@ for %%p in (api runtime file json tools) do (
 )
 
 rem Classpath addition for release
-for %%i in ("%BASE_DIR%\libs\*") do (
-	call :concat "%%i"
-)
+rem for %%i in ("%BASE_DIR%\libs\*") do (
+rem 	call :concat "%%i"
+rem )
+rem
+rem fixed the problem: The input line is too long. The syntax of the command is incorrect.
+rem see: https://narayanatutorial.com/jms/apache-kafka/the-input-line-is-too-long-the-syntax-of-the-command-is-incorrect
+rem
+call :concat "%BASE_DIR%\libs\*;"
 
 rem Classpath addition for core
 for %%i in ("%BASE_DIR%\core\build\libs\kafka_%SCALA_BINARY_VERSION%*.jar") do (
