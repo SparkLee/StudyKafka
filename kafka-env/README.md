@@ -48,6 +48,18 @@ $ bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server loc
 $ bin/kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
 ```
 
+zookeeper客户端：
+```shell
+# 连接zookeeper服务：
+$ bin/zookeeper-shell.sh localhost:2181
+
+# 查看zookeeper根节点下所有的子节点
+ls /
+
+# 查看zookeeper中存储的所有主题
+ls /brokers/topics
+```
+
 # 数据/日志目录
 
 数据存放目录：
