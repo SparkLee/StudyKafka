@@ -83,12 +83,25 @@ $ cat kafka-env/kafka_2.13-3.0.0/bin/kafka-run-class.sh
 > LOG_DIR="/var/log/kafka"
 ```
 
-# Windows 下运行 Kafka 服务报错处理
+# Windows 下运行 Kafka
 
-一、错误：The input line is too long. The syntax of the command is incorrect
-> [解决方案参考](https://narayanatutorial.com/jms/apache-kafka/the-input-line-is-too-long-the-syntax-of-the-command-is-incorrect)
+报错处理：
+> 错误信息：The input line is too long. The syntax of the command is incorrect：
 > 
-> [本项目解决方案 commit 参考](https://github.com/SparkLee/StudyKafka/commit/a390ce75566919f608926eb1194eb28f0ba96075)
+> [解决方案参考](https://narayanatutorial.com/jms/apache-kafka/the-input-line-is-too-long-the-syntax-of-the-command-is-incorrect)
+> | [本项目解决方案 commit 参考](https://github.com/SparkLee/StudyKafka/commit/a390ce75566919f608926eb1194eb28f0ba96075)
+
+启动 zookeeper/kafka 服务：
+```shell
+# 切入kafka程序目录
+$ cd kafka-env/kafka_2.13-3.0.0
+
+# 启动 zookeeper 服务（注意命令要用引号括起来，否则报错）
+$ "bin\windows\zookeeper-server-start.bat" "config\zookeeper.properties"
+
+# 启动 kafka 服务
+$ ！！！ 总报错啊，放弃，还是不要在 windows 下玩儿 kafka 了，老实用 linux 吧 ！！！
+```
 
 # 参考资料
 
