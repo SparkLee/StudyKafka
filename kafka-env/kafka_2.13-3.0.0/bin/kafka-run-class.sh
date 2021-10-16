@@ -46,6 +46,7 @@ should_include_file() {
 }
 
 base_dir=$(dirname $0)/..
+LOG_DIR=/var/log/kafka
 
 if [ -z "$SCALA_VERSION" ]; then
   SCALA_VERSION=2.13.6
