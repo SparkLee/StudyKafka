@@ -80,7 +80,7 @@ $ ll /home/StudyKafka/kafka-env/kafka_2.13-3.0.0/logs/
 
 # 自定义日志目录
 $ cat kafka-env/kafka_2.13-3.0.0/bin/kafka-run-class.sh
-> LOG_DIR=/var/log/kafka
+> LOG_DIR="/var/log/kafka"
 ```
 
 # 参考资料
