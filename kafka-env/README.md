@@ -83,6 +83,13 @@ $ cat kafka-env/kafka_2.13-3.0.0/bin/kafka-run-class.sh
 > LOG_DIR="/var/log/kafka"
 ```
 
+# Windows 下运行 Kafka 服务报错处理
+
+一、错误：The input line is too long. The syntax of the command is incorrect
+> [解决方案参考](https://narayanatutorial.com/jms/apache-kafka/the-input-line-is-too-long-the-syntax-of-the-command-is-incorrect)
+> 
+> [本项目解决方案 commit 参考](https://github.com/SparkLee/StudyKafka/commit/a390ce75566919f608926eb1194eb28f0ba96075)
+
 # 参考资料
 
 - [APACHE KAFKA QUICKSTART](http://kafka.apache.org/quickstart)
